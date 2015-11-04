@@ -1,0 +1,67 @@
+body {
+  font-family: helvetica;
+}
+
+header {
+  display: flex;
+}
+
+.techcrunchlogo {
+  width: 300px;
+  flex: none;
+}
+
+span .letusknow {
+  color: #089e00;
+}
+
+.toolbar {
+  background: green;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.75em;
+  color: white
+}
+
+nav {
+  margin-top: 50px;
+  text-decoration: none;
+  font-size: 1.5em
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.second {
+  flex: 1;
+}
+
+.letusknow {
+  font-style: italic;
+  color: black
+}
+
+input[type=search] {
+	padding: 3px;            /* Overridden by padding: 1px; */
+  color: green;     /* Overridden by font: -webkit-small-control; */
+	border: 2px solid grey;  /* Overridden by border: 2px inset; */
+	background: white;          /* Overridden by background-color: white; */
+	line-height: 3;           /* Irrelevant, I guess */
+}
+
+::-webkit-input-placeholder {
+  color: green;
+  font-size: 15px;
+  font-family: helvetica;
+  text-align: left;
+}
+
+button {
+	padding: 0px;            /* Overridden by padding: 1px; */
+  color: green;     /* Overridden by font: -webkit-small-control; */
+	border: 2px solid grey;  /* Overridden by border: 2px inset; */
+	background: white;          /* Overridden by background-color: white; */
+	line-height: 10px;           /* Irrelevant, I guess */
+}
