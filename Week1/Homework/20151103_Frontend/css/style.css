@@ -1,0 +1,70 @@
+/*CSS style for Nov 3 homework*/
+
+.mammal {
+  color: red;
+  background-color: lavenderBlush;
+  font-weight: bold;
+}
+
+.bird {
+  color: blue;
+  background-color: lightGray;
+  font-style: italic;
+}
+
+.fish {
+  color: orange;
+  background-color: lightYellow;
+  text-decoration: underline;
+}
+
+#gray {
+  color: gray
+}
+
+#orangeRed {
+  color: orangeRed
+}
+
+#black {
+  color: black
+}
+
+#salmon {
+  color: salmon
+}
+
+#sienna{
+  color: sienna
+}
+
+#gold {
+  color: gold
+}
+
+#tan {
+  color: tan
+}
+
+#steelBlue {
+  color: steelBlue;
+}
+
+#lime {
+  color: lime;
+}
+
+#purple {
+  color: purple;
+}
+
+ul {
+  border: 3px dotted plum;
+  border-radius: 5px;
+}
+
+li {
+  border-top: 3px;
+  border-color: seagreen;
+  border-style: solid;
+}

@@ -1,0 +1,37 @@
+body {
+  background-color: red;
+}
+
+p {
+  color: orange;
+}
+
+div {
+  /*border-width: 10px*/
+  border: 1px solid black;
+  color: blue
+}
+
+button {
+  border: 10px solid gold;
+}
+
+button: disabled {
+}
+
+.div1 {
+  color: black
+}
+
+#class1 {
+  color: white
+}
+
+.comments {
+  font: 10px solid gold
+  font-color: gold
+}
+
+/*hierarchy in CSS is id and then class*/
+/*each div can have multiple classes and multiple ids*/
+/*classes and ids are like tags*/
