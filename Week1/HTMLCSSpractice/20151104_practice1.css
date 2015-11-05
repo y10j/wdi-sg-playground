@@ -1,0 +1,14 @@
+.container div {
+  display: none;
+}
+
+button:hover + .container div:nth-of-type(2) {
+  display: block;
+}
+
+
+/*You can also give the same qualities to multiple groups/classes by using coma
+.container div,
+.container p  {
+  display: none;
+}*/
