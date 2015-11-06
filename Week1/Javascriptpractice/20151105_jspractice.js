@@ -99,7 +99,8 @@ function person {
   this.luckyNumber: Math.random()
 }
 
-// when we type: Person.prototype.name = "David", even seb.name returns "David".
+// when we type: Person.prototype.name = "David", even seb.name and cheryl.name will return "David"! The "prototype" matters alot (vs "this.name" which creates just an instance)
+
 
 var seb = new Person()
 console.log(seb.luckyNumber); //0.345678
@@ -133,4 +134,13 @@ class Person {
 var seb = new Person()
 seb.greeting('Derek')
 
-// But not all browsers support ES6. Thus we have to transpile our code using Babel. 
+// But not all browsers support ES6. Thus we have to transpile our code using Babel (http://babeljs.io/repl/)
+
+// ES6 allows us to write the same line with fat arrows (2nd line). But not all browsers support ES6, thus we still have to use babel to transpile
+foo.forEach(function (number) { console.log(number) })
+foo.forEach(number => console.log(number))
+
+greeting () {
+  console.log('hello' + name);
+}
+greeting name => console.log('hello ' + 'name');
