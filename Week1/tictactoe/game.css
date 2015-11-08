@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+}
+
+.tile {
+  border: 10px solid white;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin: 2px;
+  color: white;
+  font-size: 140px;
+  /*vertical-align: top;  /*try to turn this off and use flexbox*/
+  text-align: center;
+}
+
+.row {
+  text-align: center;
+  display: flex;
+  /*we always want to flext the parent*/
+}
+
+div {
+  color: white;
+  text-align: center;
+}
+
+
+exit game when {
+
+}

@@ -143,4 +143,4 @@ foo.forEach(number => console.log(number))
 greeting () {
   console.log('hello' + name);
 }
-greeting name => console.log('hello ' + 'name');
+// this function will not work because we cannot use ""=>"" in class method:  greeting name => console.log('hello ' + 'name');
