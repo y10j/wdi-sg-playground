@@ -2,6 +2,10 @@ body {
   background-color: black;
 }
 
+h1 {
+  color: white
+}
+
 .tile {
   border: 10px solid white;
   height: 200px;
