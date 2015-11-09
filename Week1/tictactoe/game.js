@@ -71,13 +71,6 @@ body.addEventListener('click', event => {
   }
 })
 
-// var people = ['alice', 'barney', 'charles']
-// people.forEach (function (person) {
-//   var element = document.createElement('h1')
-//   element.textContent = person
-//   document.querySelector('footer').appendChild(element)
-// })
-
 reset.addEventListener('click', event => {
   a1.innerHTML = ''
   a2.innerHTML = ''
