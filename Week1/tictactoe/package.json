@@ -4,7 +4,7 @@
   "description": "tictactoe",
   "main": "game.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
     "build": "browserify game.js --outfile game.dist1.js --transform babelify"
   },
   "keywords": [
