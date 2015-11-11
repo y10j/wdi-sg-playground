@@ -53,7 +53,7 @@ var allowed = (age > 51) ? 'wow' :
 age > 41 ? 'hey':
 age > 31 ? 'what is up':
 age > 21 ? 'totally':
-age > 18 ? 'yes'
+age > 18 ? 'yes':
 'no';
 
 // using switch for the same problem above isn't ideal. The case/switch operator is applicable if you have discrete values

@@ -19,7 +19,7 @@ console.log(concatenate() === 'Hello David')
 // exercise 2: using "forEach" instead of for loops
 var message = ['hey', 'there']
 
-message.forEach(function (word) { console.log(word) })
+message.forEach(function (word) { console.log(word) }) // for each doesn't return anything. You have to console log or do something else
 
 // end of exercise 2
 // other things in addition to forEach: "every", "some", "filter" and "map". forEach doesn't really return anything. "Map" can return array.

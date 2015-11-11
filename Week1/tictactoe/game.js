@@ -1,8 +1,8 @@
 var currentPlayer ='one'
 var body = document.querySelector('body')
 var gameStatus = 'gameOn'
-var changeText = document.querySelector(".turnAlert")
-var reset = document.getElementById("clearButton")
+var changeText = document.querySelector('.turnAlert')
+var reset = document.getElementById('clearButton')
 var reload = document.getElementById("reloadButton")
 var entries = document.getElementsByClassName('tile')
 
@@ -11,10 +11,10 @@ if (playerOneName === '') {
   alert('Since you\'re too shy to reveal your name, I will assign your name to be \'Player 1\'!')
   playerOneName = 'Player 1'
 } else if (playerOneName !== '') {
-   playerOneName + ' is ready to play!'
- } else {
-   confirm('Are you sure you want to quit?')
-   gameStatus = 'gameOver'
+  playerOneName + ' is ready to play!'
+} else {
+  confirm('Are you sure you want to quit?')
+  gameStatus = 'gameOver'
 }
 
 var playerTwoName = prompt('Please enter player 2\'s name!', '')
@@ -23,11 +23,11 @@ if (playerTwoName === '') {
   playerTwoName = 'Player 2'
   alert('Let the game begin!\n' + playerOneName + ' will be \'X\'\n' + playerTwoName + ' will be \'O\'')
 } else if (playerTwoName !== '') {
-   playerTwoName + ' is ready to play!'
-   alert('Let the game begin!\n' + playerOneName + ' will be \'X\'\n' + playerTwoName + ' will be \'O\'')
- } else {
-   confirm('Are you sure you want to quit?')
-   gameStatus = 'gameOver'
+  playerTwoName + ' is ready to play!'
+  alert('Let the game begin!\n' + playerOneName + ' will be \'X\'\n' + playerTwoName + ' will be \'O\'')
+} else {
+  confirm('Are you sure you want to quit?')
+  gameStatus = 'gameOver'
 }
 
 body.addEventListener('click', event => {
@@ -45,24 +45,24 @@ body.addEventListener('click', event => {
     changeText.innerHTML = 'It is now ' + playerOneName + '\'s turn with \'X\''
   }
   if (
-      (a1.textContent === a2.textContent && a2.textContent === a3.textContent && a2.textContent !== '') ||
-      (b1.textContent === b2.textContent && b2.textContent === b3.textContent && b2.textContent !== '') ||
-      (c1.textContent === c2.textContent && c2.textContent === c3.textContent && c2.textContent !== '') ||
-      (a1.textContent === b1.textContent && b1.textContent === c1.textContent && b1.textContent !== '') ||
-      (a2.textContent === b2.textContent && b2.textContent === c2.textContent && b2.textContent !== '') ||
-      (a3.textContent === b3.textContent && b3.textContent === c3.textContent && b3.textContent !== '') ||
-      (a1.textContent === b2.textContent && b2.textContent === c3.textContent && b2.textContent !== '') ||
-      (a3.textContent === b2.textContent && a3.textContent === c1.textContent && a3.textContent !== '')
+    (a1.textContent === a2.textContent && a2.textContent === a3.textContent && a2.textContent !== '') ||
+    (b1.textContent === b2.textContent && b2.textContent === b3.textContent && b2.textContent !== '') ||
+    (c1.textContent === c2.textContent && c2.textContent === c3.textContent && c2.textContent !== '') ||
+    (a1.textContent === b1.textContent && b1.textContent === c1.textContent && b1.textContent !== '') ||
+    (a2.textContent === b2.textContent && b2.textContent === c2.textContent && b2.textContent !== '') ||
+    (a3.textContent === b3.textContent && b3.textContent === c3.textContent && b3.textContent !== '') ||
+    (a1.textContent === b2.textContent && b2.textContent === c3.textContent && b2.textContent !== '') ||
+    (a3.textContent === b2.textContent && a3.textContent === c1.textContent && a3.textContent !== '')
   ) {
-      if (currentPlayer === 'one') {
-        var winner = playerTwoName
-      } else {
-        var winner = playerOneName
-      }
-      alert('We have a winner!\n' + winner + ' wins!')
-      gameStatus = 'gameOver'
+    if (currentPlayer === 'one') {
+      var winner = playerTwoName
+    } else {
+      var winner = playerOneName
     }
-    else {
+    alert('We have a winner!\n' + winner + ' wins!')
+    gameStatus = 'gameOver'
+  }
+  else {
     gameStatus = 'gameOn'
   }
   if (((a1.textContent + a2.textContent + a3.textContent + b1.textContent + b2.textContent + b3.textContent + c1.textContent + c2.textContent + c3.textContent).length == 9) && (gameStatus == 'gameOn')) {

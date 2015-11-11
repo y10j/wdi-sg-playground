@@ -21,7 +21,7 @@ h1 {
 .row {
   text-align: center;
   display: flex;
-  /*we always want to flext the parent*/
+  /*we always want to flex the parent*/
 }
 
 div {

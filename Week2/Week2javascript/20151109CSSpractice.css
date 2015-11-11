@@ -1,0 +1,30 @@
+/*We will learn about boxing*/
+
+main {
+  position: relative;
+}
+
+main div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: red;
+  color: white;
+  font-size: 36pt;
+}
+
+/* with "fixed" position,
+/* you are relatively positioned to the nearest relative ancestor */
+/*repositioning and re-layouting elements is a computationally intensive process*/
+/*div::after and div::before allows you to add content via CSS instead of HTML*/
+
+/*position static:
+position fixed:  pins it to the screen no matter how you scroll
+position absolute: position is fixed to the nearest parent that has relative positioning*/
+/*fixed: fixed to viewport
+relative: */
+/*the fixed banner when you're surfing a website: just "fixed"*/
