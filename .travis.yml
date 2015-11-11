@@ -2,4 +2,4 @@ language: node_js
 node_js:
   - "4.1"
 before_install:            # edited from website command
-  - "cd Week1/tictactoe"   # Travis only needs a relative path 
+  - "cd Week1/tictactoe"   # Travis only needs a relative path
