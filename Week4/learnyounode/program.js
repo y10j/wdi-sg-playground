@@ -147,6 +147,16 @@
 
 var bl = require('bl')
 var http = require('http')
+var async = require('async')
+
+// async.map([process.argv[2], process.argv[3], process.argv[4]], http.get, function (err, response) {
+//   response.setEncoding('utf8')
+//     response.pipe(bl(function (err, data) {
+//     if (err) return console.error(err)
+//     data = data.toString()
+//     console.log(data)
+//   }
+// ))})
 
 for (i = 2; i < 5; i++) {
 http.get(process.argv[i], function (response) {

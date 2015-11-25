@@ -166,3 +166,8 @@ console.log(first, last.join(', '))  // The join() method joins all elements of 
 new Map(), .set(), and then .get()
 
 // Lesson 15: we can iterate Maps with for...of loops
+
+
+// Testing
+
+Do create a folder called "test"
