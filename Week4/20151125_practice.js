@@ -177,3 +177,44 @@ async function getAll (urls) {
 getAll(urls).then(responses => {
   console.log(responses[0])
 })
+
+
+http://codepen.io/edmoore/pen/gaJEdw?editors=001
+
+        // Eddie Moore's babel:
+const urls = [
+  'https://api.mig.me/location',
+  'https://api.mig.me/location/ip',
+  'https://api.mig.me/meta?url=https://www.youtube.com/watch?v=qNOY1qPRSUM',
+  'https://api.mig.me/meta?url=https://www.google.com'
+]
+
+// let apis = []
+// urls.forEach(url => {
+//   apis.push(fetch(url).then(res => res.json()))
+// })
+
+// const apis = urls.map(url => {
+//   return fetch(url).then(res => res.json())
+// })
+
+// Promise.all(apis).then(responses => {
+//   console.log(responses[0])
+//   console.log(responses[1])
+// })
+
+// async function getAll (urls) {
+//   const apis = urls.map(url => {
+//     return fetch(url).then(res => res.json())
+//   })
+//   return await* apis
+// }
+
+async function getAll (urls) {
+  return await* urls.map(url => fetch(url).then(res => res.json()))
+}
+
+
+getAll(urls).then(responses => {
+  console.log(responses[0])
+}))
