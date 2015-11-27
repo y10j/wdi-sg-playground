@@ -113,7 +113,7 @@ async function getIt() {
 
     // Class practice: getting the first line from Jesstern's JSON file:
 
-    const address1 = 'https://jsstrn.github.io/ga-wdi-class/js/data.json'
+    const address1= 'https://jsstrn.github.io/ga-wdi-class/js/data.json'
 
     fetch(address1)
       .then(res => {
