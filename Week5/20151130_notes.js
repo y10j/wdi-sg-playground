@@ -57,3 +57,12 @@ http://www.smashingmagazine.com/2014/01/understanding-javascript-function-protot
 *** 3. Going through the CRUD exercise ***
 
 Note that we can use Object.assign to update the databse
+
+
+
+***4. Deployment ***  (lots of server monitoring and uptime monitoring tools)
+Great tools:
+--pingdom
+--uptime robot
+--pm2 and keymetrics
+--New Relic
