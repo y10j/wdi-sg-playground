@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Audio</title>
+  </head>
+  <body>
+    <script>
+    var audioContext = new AudioContext();
+        window.onload = function(){
+          var constraints = {
+                mandatory: {
+                  googEchoCancellation: false,
+                  googAutoGainControl: false,
+                  googNoiseSuppression: false,
+                  googHighpassFilter: false
+                },
+                optional: []
+            };
+            navigator.mediaDevices.getUserMedia( {audio: constraints}).then(function (stream) {
+          var mediaStreamSource = audioContext.createMediaStreamSource( stream );
+          var gainNode  = audioContext.createGain();
+          gainNode.gain.value = 0.1
+          mediaStreamSource.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+                console.log(mediaStreamSource)
+        })
+        var convolver = audioContext.createConvolver()
+      }
+    </script>
+  </body>
+</html>
+
+<!--
+Run the two commands in terminal (from Seb's handsfree)
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+http-server -c-1 -o --ssl
+Also, make sure to enable "experimental web" in "chrome://flags"
+
+taken from: https://github.com/cbas/handsfree
+Close and restart Chrome, then allow microphone access
+-->
